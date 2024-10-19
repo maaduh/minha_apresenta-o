@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=WindSong:wght@400;500&display=swap" rel="stylesheet">
+    <title>Página de apresentação</title>
+</head>
+<style>
+        body {
+	        text-align: center;
+            background-color: rgb(231, 210, 213);
+            }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-right: 0px;
+        }
+        .sobremim {
+            background-color: white;
+            padding:20px 20px 20px 20px;
+            margin-top: 40px;
+            margin-left: 40px;
+            margin-right: 150px;
+            margin-bottom: 40px;
+        }
+        .gostos {
+            background-color: rgb(233, 202, 207);
+            padding:20px 20px 20px 20px;
+            margin-bottom: 20px;
+            margin-left: 40px;
+            margin-right: 150px;
+            border: 15px solid white;
+        }
+        .redessociais {
+            background-color: white;
+            padding:5px 195px 0px 195px;
+            margin-left: 150px;
+        }
+        p {
+            font-size: large;
+            font-style: oblique;
+        }
+
+        .img1 {
+            border: 10px solid white;
+            margin-left: 150px;
+            margin-bottom: 0%;
+            margin-top: 40px;
+        }
+        
+        .nome {
+            font-size: xx-large;
+            font-style: oblique;
+        }
+        footer {
+            background-color: rgb(248, 248, 248);
+            bottom: 0px;
+            padding: auto;
+        }
+        .rs {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: large;
+            margin-bottom: 20px;
+        }
+        .img2 {
+            margin-right: 5px;
+        }
+        .button1 {
+            background-color: rgb(233, 202, 207);
+            margin-right: 100px;
+            width: 300px;
+            height: 50px;  
+            border: 10px solid white;
+
+        }
+        .button2 {
+            border-radius: 10px;
+            border-color: rgb(248, 248, 248);
+            background-color: rgb(248, 248, 248);
+            margin-right: 100px;
+        }
+        input {
+            border-radius: 10px;
+            border-color: rgb(248, 248, 248);
+            background-color: rgb(248, 248, 248);
+            margin-left: 120px;
+        }
+        ::placeholder{
+            text-align: center;
+        }
+        .sg {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin-top: 0px;
+            margin-left: 0px;
+        }
+        .bdy {
+            display: flex;
+            align-items:flex-start;
+            justify-content: center;
+            
+        }
+        header {
+            background-color: white;
+            font-family: 'Dancing Script', cursive;
+            font-style: italic;
+            padding: 1px; 
+            top: 0; 
+            z-index: 1000;
+            margin: 0px;
+            font-size: larger;
+        }
+</style>
+<body>
+    <header>
+        <h2>Página de apresentação</h2>
+    </header>    
+    <div class="bdy">
+    <div class="container">
+        <img src="c:\Users\duds2\Downloads\Maria Eduarda (3).png" width="500" class="img1">
+        <div class="redessociais">    
+            <h2>Redes sociais</h2>
+            <div class="rs">
+                <img src="c:\Users\duds2\Downloads\images.jpeg" width="25" class="img2">
+                <p><a href="https://www.instagram.com/maaduh._/">Instagram</a></p>
+            </div>
+        </div> 
+    </div>
+    <div class="sg">
+        <div class="sobremim">
+            <h2>Sobre mim</h2>
+            <p>Meu nome é Maria Eduarda, sou estudante de Engenharia de Software na UnB e estou no 4° semestre. 
+        Desde o início da graduação, desenvolvi um forte interesse pela área de desenvolvimento de software, 
+        o que me levou a participar ativamente em monitorias e projetos acadêmicos.
+        Sou apaixonada por aprender novas tecnologias e sempre busco aprimorar minhas habilidades técnicas e de 
+        resolução de problemas. Além disso, gosto de trabalhar em equipe, pois acredito que a troca de conhecimento e 
+        experiências entre colegas é fundamental para o crescimento individual e coletivo.
+        Acredito que fazer parte da CJR seria uma oportunidade incrível de aplicar meus conhecimentos 
+        em um ambiente colaborativo e desafiador, contribuindo para o desenvolvimento de soluções reais e impactantes.
+        Estou motivada a aprender com os projetos e a agregar valor à equipe com dedicação e comprometimento.</p>
+        </div>
+        <div class="gostos">
+            <h2>Gostos</h2>
+            <p>Minha área favorita na parte de software é a Inteligência artificial, sempre fui fascinada por tudo que envolve a IA. 
+        No meu tempo livre gosto de sair com meus amigos, jogar, assistir séries e filmes e principalmente dançar. Minhas comidas favoritas são sushi e pudim de Nutella</p>
+            <h3>Qual é sua área favorita em software?</h3>
+            <input type="text" placeholder="Digite aqui" class="input1">
+            <button type="submit" onclick="gostos()" class="button2">Enviar</button>
+        </div>
+        <button type="button" onclick="fimdapag()" class="button1"> Clique quando terminar de ler </button>
+    </div>
+    </div>
+</body>
+<script>
+	function fimdapag(){
+        alert("Essa foi a minha página de apresentação, espero que tenha gostado, obrigada por ler! S2")
+    }
+    function gostos(){
+        alert("Que legal!!")
+    }
+
+</script>
+<footer>
+    <p>contato: duds2992@gmail.com</p>
+</footer>
+</html>
